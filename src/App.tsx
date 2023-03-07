@@ -1,5 +1,10 @@
+// 3rd party imports
 import React from 'react';
 import { HashRouter as Router, Link, Route, Routes } from 'react-router-dom';
+
+// Custom imports
+import RyanHodge from './projects/RyanHodge/RyanHodge';
+import { PATHS } from './tools/Constants';
 
 function App() {
   return (
@@ -7,13 +12,13 @@ function App() {
       	<Router>
 			<div className='App'>
 				<Link to={'/home'}>Home</Link>
-				<Link to={'/events'}>Events</Link>
+				<Link to={PATHS.RYAN_HODGE}>Ryan Hodge</Link>
 				<div className='content'>
 					{/* Define routes within the website */}
 					<Routes>
-						<Route path='/' element={<p>Home</p>}/>
-						<Route path={'/home'} element={<p>Home2</p>}/>
-						<Route path={'/events'} element={<p>Events2</p>}/>
+						<Route path={PATHS.HOME} element={<p>Home</p>}/>
+						<Route path={PATHS.RYAN_HODGE} element={<RyanHodge/>}/>
+						<Route path={PATHS.HOME} element={<p>Events2</p>}/>
 					</Routes>
 				</div>
 			</div>
