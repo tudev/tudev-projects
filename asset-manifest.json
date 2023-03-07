@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NewTUDevWebsite/static/css/main.e6c13ad2.css",
-    "main.js": "/NewTUDevWebsite/static/js/main.384a53ed.js",
+    "main.js": "/NewTUDevWebsite/static/js/main.2a82123c.js",
     "static/js/787.bd0737ba.chunk.js": "/NewTUDevWebsite/static/js/787.bd0737ba.chunk.js",
     "index.html": "/NewTUDevWebsite/index.html",
     "main.e6c13ad2.css.map": "/NewTUDevWebsite/static/css/main.e6c13ad2.css.map",
-    "main.384a53ed.js.map": "/NewTUDevWebsite/static/js/main.384a53ed.js.map",
+    "main.2a82123c.js.map": "/NewTUDevWebsite/static/js/main.2a82123c.js.map",
     "787.bd0737ba.chunk.js.map": "/NewTUDevWebsite/static/js/787.bd0737ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.384a53ed.js"
+    "static/js/main.2a82123c.js"
   ]
 }
