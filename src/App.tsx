@@ -1,30 +1,34 @@
 // 3rd party imports
 import React from 'react';
-import { HashRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Custom imports
-import RyanHodge from './projects/RyanHodge/RyanHodge';
+import Styles from './AppStyles';
+import RyanHodge from './components/projects/RyanHodge/RyanHodge';
+import Navigation from './Navigation';
 import { PATHS } from './tools/Constants';
+import Home from './components/Home';
 
 function App() {
-  return (
-    <div className="App">
-      	<Router>
-			<div className='App'>
-				<Link to={'/home'}>Home</Link>
-				<Link to={PATHS.RYAN_HODGE}>Ryan Hodge</Link>
-				<div className='content'>
-					{/* Define routes within the website */}
-					<Routes>
-						<Route path={PATHS.HOME} element={<p>Home</p>}/>
-						<Route path={PATHS.RYAN_HODGE} element={<RyanHodge/>}/>
-						<Route path={PATHS.HOME} element={<p>Events2</p>}/>
-					</Routes>
-				</div>
-			</div>
-		</Router>
-    </div>
-  );
+	return (
+		<Styles.AppContainer>
+			<Router>
+				<Styles.NavContainer>
+					<Navigation/>
+					<div className='content'>
+						{/* Define routes within the website */}
+						<Routes>
+							<Route path={'/'} element={<Home/>}/>
+							<Route path={PATHS.HOME} element={<Home/>}/>
+							<Route path={PATHS.RYAN_HODGE} element={<RyanHodge/>}/>
+							<Route path={PATHS.HOME} element={<p>Events2</p>}/>
+						</Routes>
+					</div>
+				</Styles.NavContainer>
+			</Router>
+		</Styles.AppContainer>
+	);
 }
 
 export default App;
