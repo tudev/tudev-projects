@@ -5,23 +5,23 @@ import React from 'react'
 import Styles from './NavigationStyles'
 import { scrollToTop } from './tools/HelpfulFunctions'
 import tudevLogo from './assets/logos/logo-red.png'
-import { PATHS } from './tools/Constants'
+import { getNavColors, PATHS } from './tools/Constants'
+import Banner from './components/Banner';
 
-import { RxHamburgerMenu } from 'react-icons/rx'
+const Navigation = (): React.ReactElement => {
+	const colors = getNavColors()
 
-
-const RyanHodge = (): React.ReactElement => {
 	return (
-		<Styles.NavigationContainer>
-			<Styles.LogoContainer to={PATHS.RYAN_HODGE} onClick={scrollToTop}>
-				<img alt='logo' src={tudevLogo}/>
-				<p>TUDev</p>
-			</Styles.LogoContainer>
-			<Styles.HamburgerButton>
-				<RxHamburgerMenu size={'25px'}/>
-			</Styles.HamburgerButton>
-		</Styles.NavigationContainer>
+		<>
+			<Styles.NavigationContainer style={{backgroundColor: colors.BACKGROUND}}>
+				<Styles.LogoContainer colors={colors} to={PATHS.RYAN_HODGE} onClick={scrollToTop}>
+					<img alt='logo' src={tudevLogo}/>
+					<p><b>TUDev</b></p>
+				</Styles.LogoContainer>
+				<Banner colors={colors}/>
+			</Styles.NavigationContainer>
+		</>
 	)
 }
 
-export default RyanHodge
+export default Navigation

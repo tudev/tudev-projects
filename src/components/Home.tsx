@@ -2,14 +2,14 @@
 import React from 'react'
 
 // Custom styles
-import Styles from './RyanHodgeStyles'
+import Styles from './HomeStyles'
 
 
 const RyanHodge = (): React.ReactElement => {
 	return (
-		<Styles.RyanHodgeContainer>
-            <p>Ryan Hodge</p>
-		</Styles.RyanHodgeContainer>
+		<Styles.HomeContainer>
+            <h1>TUDev Projects</h1>
+        </Styles.HomeContainer>
 	)
 }
 
