@@ -6,6 +6,7 @@ import { NAV_COLORS } from './tools/Constants'
 export default class NavigationStyles {
 
 	static readonly NavContainer = styled.div`
+		width: 100%;
 		position: fixed;
 		top: 0;
 		display: grid;
@@ -13,7 +14,6 @@ export default class NavigationStyles {
 		grid-template-rows: 50px;
 		transition: background-color 0.5s ease;
 		z-index: 1000;
-		width: 100%;
 	`
 
 	static readonly NavigationContainer = styled.div`
