@@ -5,23 +5,32 @@ import { NAV_COLORS } from './tools/Constants'
 
 export default class NavigationStyles {
 
-	static readonly NavigationContainer = styled.div`
+
+	static readonly NavContainer = styled.div`
 		position: fixed;
 		top: 0;
+		display: grid;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: max(calc(var(--vh) * 0.04), 40px);
+		transition: background-color 0.5s ease;
+		z-index: 1000;
+		width: 100%;
+	`
+
+	static readonly NavigationContainer = styled.div`
+		grid-column: 2;
+		height: 100%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		transition: background-color 0.5s ease;
-		height: max(calc(var(--vh) * 0.04), 40px);
-		width: 100%;
 	`
 	
 	static readonly LogoContainer = styled(Link)<{colors: NAV_COLORS}>`
 		display: flex;
 		flex-direction: row;
 		height: 70%;
-		width: min(calc(var(--vh) * 0.08), 100px);
+		width: max(calc(var(--vh) * 0.1), 100px);
 		justify-content: space-between;
 		column-gap: 5%;
 		color: ${props => props.colors.TEXT};
@@ -37,6 +46,7 @@ export default class NavigationStyles {
 		& > p {
 			margin: 0;
 			align-self: center;
+			font-size: max(calc(var(--vh) * 0.02), 20px);
 		}
 	`
 }

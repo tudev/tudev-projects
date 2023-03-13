@@ -10,7 +10,7 @@ export class COLORS {
     static readonly PRIMARY = '#a41e35'
     static readonly PRIMARY_HOVER = '#771727'
     static readonly SECONDARY = '#ffffff'
-    static readonly BACKGROUND = '#771727'
+    static readonly BACKGROUND = '#a41e35'
 	static readonly TEXT = '#e8e8e8'
 	static readonly SECONDARY_TEXT = '#777777'
 }

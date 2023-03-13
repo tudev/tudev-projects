@@ -21,6 +21,10 @@ export default class BannerStyles {
             color: ${props => props.colors.HOVER};
             cursor: pointer;
         }
+
+        & > svg {
+            stroke-width: 0.5;
+        }
     `
 
 }
