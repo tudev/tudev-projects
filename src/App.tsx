@@ -9,12 +9,15 @@ import RyanHodge from './components/projects/RyanHodge/RyanHodge';
 import Navigation from './Navigation';
 import { PATHS } from './tools/Constants';
 import Home from './components/Home';
+import useWindowDimensions from './tools/HelpfulFunctions';
 
 function App() {
+	const {height} = useWindowDimensions()
+
 	return (
 		<Styles.OverallStyles>
 			<Router>
-				<Styles.AppContainer>
+				<Styles.AppContainer height={height}>
 					<Navigation/>
 					<div className='content'>
 						{/* Define routes within the website */}
