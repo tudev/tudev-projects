@@ -12,9 +12,9 @@ import Home from './components/Home';
 
 function App() {
 	return (
-		<Styles.AppContainer>
+		<Styles.OverallStyles>
 			<Router>
-				<Styles.NavContainer>
+				<Styles.AppContainer>
 					<Navigation/>
 					<div className='content'>
 						{/* Define routes within the website */}
@@ -25,10 +25,10 @@ function App() {
 							<Route path={PATHS.HOME} element={<p>Events2</p>}/>
 						</Routes>
 					</div>
-				</Styles.NavContainer>
+				</Styles.AppContainer>
 			</Router>
-		</Styles.AppContainer>
+		</Styles.OverallStyles>
 	);
 }
 
-export default App;
+export default App

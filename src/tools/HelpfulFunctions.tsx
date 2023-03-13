@@ -46,20 +46,17 @@ export const setVariableCssVars = (): void => {
 	})
 }
 
-
-function getWindowDimensions(): {width: number, height: number} {
-	const { innerWidth: width, innerHeight: height } = window
-	return {
-		width,
-		height
-	}
-}
-
 export default function useWindowDimensions(): {width: number, height: number} {
-	const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
+	const [windowDimensions, setWindowDimensions] = useState({
+		width: window.innerWidth,
+		height: window.innerHeight
+	})
 
 	useEffect(() => {
-		setWindowDimensions(getWindowDimensions())
+		setWindowDimensions({
+			width: window.innerWidth,
+			height: window.innerHeight
+		})
 	}, [])
 
 	return windowDimensions

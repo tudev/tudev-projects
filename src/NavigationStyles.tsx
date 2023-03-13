@@ -15,13 +15,14 @@ export default class NavigationStyles {
 		transition: background-color 0.5s ease;
 		height: max(calc(var(--vh) * 0.04), 40px);
 		width: 100%;
+		z-index: 1000;
 	`
 	
 	static readonly LogoContainer = styled(Link)<{colors: NAV_COLORS}>`
 		display: flex;
 		flex-direction: row;
 		height: 70%;
-		width: min(calc(var(--vh) * 0.08), 100px);
+		width: max(calc(var(--vh) * 0.1), 100px);
 		justify-content: space-between;
 		column-gap: 5%;
 		color: ${props => props.colors.TEXT};
@@ -37,6 +38,7 @@ export default class NavigationStyles {
 		& > p {
 			margin: 0;
 			align-self: center;
+			font-size: max(calc(var(--vh) * 0.02), 20px);
 		}
 	`
 }
