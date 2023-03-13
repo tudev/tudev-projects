@@ -2,7 +2,8 @@
 import React from 'react'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { NAV_COLORS } from '../tools/Constants';
+import { NAV_COLORS, PATHS } from '../tools/Constants';
+import { scrollToTop } from '../tools/HelpfulFunctions';
 
 // Custom styles
 import Styles from './BannerStyles'
@@ -16,6 +17,10 @@ class Banner extends React.Component <{colors: NAV_COLORS}, { show: boolean }> {
 
     handleClose = (): void => {this.setState({ show: false })}
     handleShow = (): void => {this.setState({ show: true })}
+    handleLink = (): void => {
+        this.handleClose()
+        scrollToTop()
+    }
 
 	render () {
 		return (
@@ -26,11 +31,13 @@ class Banner extends React.Component <{colors: NAV_COLORS}, { show: boolean }> {
 
                 <Styles.OffcanvasContainer show={this.state.show} onHide={this.handleClose}>
                     <Offcanvas.Header closeButton>
-                        <Offcanvas.Title style={{color: 'black'}}>Parameters</Offcanvas.Title>
+                        <Offcanvas.Title style={{color: 'black'}}>Student Projects</Offcanvas.Title>
                     </Offcanvas.Header>
-                    <Offcanvas.Body>
-                        <p>sdlkjfsl</p>
-                    </Offcanvas.Body>
+                    <Styles.OffcanvasBody>
+                        <Styles.LinkCont className='first' to={PATHS.RYAN_HODGE} onClick={this.handleLink}>Ryan Hodge</Styles.LinkCont>
+                        <Styles.LinkCont to={PATHS.RYAN_HODGE} onClick={this.handleLink}>Ryan Hodge</Styles.LinkCont>
+                        <Styles.LinkCont to={PATHS.RYAN_HODGE} onClick={this.handleLink}>Ryan Hodge</Styles.LinkCont>
+                    </Styles.OffcanvasBody>
                 </Styles.OffcanvasContainer>
             </>
 		)

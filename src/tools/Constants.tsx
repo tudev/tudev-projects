@@ -8,11 +8,8 @@ export type NAV_COLORS = {
 
 export class COLORS {
     static readonly PRIMARY = '#a41e35'
-    static readonly PRIMARY_HOVER = '#771727'
-    static readonly SECONDARY = '#ffffff'
-    static readonly BACKGROUND = '#a41e35'
-	static readonly TEXT = '#e8e8e8'
-	static readonly SECONDARY_TEXT = '#777777'
+    static readonly BACKGROUND = '#721827'
+	static readonly TEXT = '#ffffff'
 }
 
 export const getNavColors = (): NAV_COLORS => {
