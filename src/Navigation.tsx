@@ -12,15 +12,15 @@ const Navigation = (): React.ReactElement => {
 	const colors = getNavColors()
 
 	return (
-		<>
-			<Styles.NavigationContainer style={{backgroundColor: colors.BACKGROUND}}>
+		<Styles.NavContainer style={{backgroundColor: colors.BACKGROUND}}>
+			<Styles.NavigationContainer>
 				<Styles.LogoContainer colors={colors} to={PATHS.RYAN_HODGE} onClick={scrollToTop}>
 					<img alt='logo' src={tudevLogo}/>
 					<p><b>TUDev</b></p>
 				</Styles.LogoContainer>
 				<Banner colors={colors}/>
 			</Styles.NavigationContainer>
-		</>
+		</Styles.NavContainer>
 	)
 }
 
