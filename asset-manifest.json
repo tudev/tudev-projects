@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Projects/static/css/main.44f8b8b5.css",
-    "main.js": "/Projects/static/js/main.f65452b1.js",
-    "static/js/787.bd0737ba.chunk.js": "/Projects/static/js/787.bd0737ba.chunk.js",
-    "static/media/owl-bg.webm": "/Projects/static/media/owl-bg.4ea85e1f3abec017bc5d.webm",
-    "static/media/logo-red.png": "/Projects/static/media/logo-red.70c71e7f1ab686cfa853.png",
-    "index.html": "/Projects/index.html",
-    "main.44f8b8b5.css.map": "/Projects/static/css/main.44f8b8b5.css.map",
-    "main.f65452b1.js.map": "/Projects/static/js/main.f65452b1.js.map",
-    "787.bd0737ba.chunk.js.map": "/Projects/static/js/787.bd0737ba.chunk.js.map"
+    "main.css": "/NewTUDevWebsite/static/css/main.44f8b8b5.css",
+    "main.js": "/NewTUDevWebsite/static/js/main.052641b7.js",
+    "static/js/787.bd0737ba.chunk.js": "/NewTUDevWebsite/static/js/787.bd0737ba.chunk.js",
+    "static/media/owl-bg.webm": "/NewTUDevWebsite/static/media/owl-bg.4ea85e1f3abec017bc5d.webm",
+    "static/media/logo-red.png": "/NewTUDevWebsite/static/media/logo-red.70c71e7f1ab686cfa853.png",
+    "index.html": "/NewTUDevWebsite/index.html",
+    "main.44f8b8b5.css.map": "/NewTUDevWebsite/static/css/main.44f8b8b5.css.map",
+    "main.052641b7.js.map": "/NewTUDevWebsite/static/js/main.052641b7.js.map",
+    "787.bd0737ba.chunk.js.map": "/NewTUDevWebsite/static/js/787.bd0737ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44f8b8b5.css",
-    "static/js/main.f65452b1.js"
+    "static/js/main.052641b7.js"
   ]
 }
