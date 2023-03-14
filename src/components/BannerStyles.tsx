@@ -18,6 +18,18 @@ export default class BannerStyles {
         }
     `
 
+    static readonly HomeLink = styled(Link)`
+        border-radius: 4px;
+        transition: background-color 0.5s ease;
+        padding: 1%;
+        color: black;
+
+        &:hover {
+            background-color: #00000044;
+            color: black;
+        }
+    `
+
     static readonly LinkCont = styled(Link)`
         padding: 2%;
         padding-left: 10%;

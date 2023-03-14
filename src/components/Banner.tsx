@@ -1,9 +1,10 @@
 // Third party imports
 import React from 'react'
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Offcanvas from 'react-bootstrap/Offcanvas'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { NAV_COLORS, PATHS } from '../tools/Constants';
-import { scrollToTop } from '../tools/HelpfulFunctions';
+import { AiOutlineHome } from 'react-icons/ai'
+import { NAV_COLORS, PATHS } from '../tools/Constants'
+import { scrollToTop } from '../tools/HelpfulFunctions'
 
 // Custom styles
 import Styles from './BannerStyles'
@@ -31,6 +32,7 @@ class Banner extends React.Component <{colors: NAV_COLORS}, { show: boolean }> {
 
                 <Styles.OffcanvasContainer show={this.state.show} onHide={this.handleClose}>
                     <Offcanvas.Header closeButton>
+                        <Styles.HomeLink to={PATHS.HOME} onClick={this.handleLink}><AiOutlineHome size={'25px'}/></Styles.HomeLink>
                         <Offcanvas.Title style={{color: 'black'}}>Student Projects</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Styles.OffcanvasBody>
