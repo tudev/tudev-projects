@@ -1,6 +1,6 @@
 // Third party imports
 import React from 'react'
-import useWindowDimensions from '../tools/HelpfulFunctions'
+import { useWindowSize } from '../tools/HelpfulFunctions'
 
 // Custom styles
 import Styles from './HomeStyles'
@@ -8,11 +8,11 @@ import backgroundVideo from '../assets/owl-bg.webm'
 
 
 const Home = (): React.ReactElement => {
-	const {height} = useWindowDimensions()
+	const { width, height } = useWindowSize()
 
 	return (
 		<>
-			<Styles.VideoContainer height={height}>
+			<Styles.VideoContainer height={height} width={width}>
 				<video loop muted autoPlay playsInline id='video-background'>
 					<source src={backgroundVideo} type='video/webm'/>
 				</video>

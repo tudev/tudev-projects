@@ -15,20 +15,26 @@ export default class HomeStyles {
 		align-self: center;
 	`
 
-	static readonly VideoContainer = styled.div<{height: number}>`
+	static readonly VideoContainer = styled.div<{height: number, width: number}>`
 		height: ${props => props.height + 'px'};
+		width: 100%;
 		overflow: hidden;
 		position: absolute;
-		left: 50%;
-		position: absolute;
-		top: 50%;
-		transform: translate(-40%, -50%);
 		z-index: -1;
-		background-color: ${COLORS.PRIMARY};
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: ${props => props.width <= 680 ? COLORS.BACKGROUND : COLORS.PRIMARY};
+		object-fit: contain;
 
 		& > video {
 			opacity: 0.3;
-			/* background-color: ${COLORS.PRIMARY}; */
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: ${props => props.width <= 680 ? 'none' : 'block'};
+			/* width: var(--vh); */
 		}
 	`
 }

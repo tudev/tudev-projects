@@ -9,10 +9,10 @@ import RyanHodge from './components/projects/RyanHodge/RyanHodge';
 import Navigation from './Navigation';
 import { PATHS } from './tools/Constants';
 import Home from './components/Home';
-import useWindowDimensions from './tools/HelpfulFunctions';
+import { useWindowSize } from './tools/HelpfulFunctions';
 
 function App() {
-	const {height} = useWindowDimensions()
+	const { height } = useWindowSize()
 
 	return (
 		<Styles.OverallStyles>
