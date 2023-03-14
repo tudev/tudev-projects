@@ -1,8 +1,8 @@
 {
-  "name": "new-tudev-website",
+  "name": "tudev-projects",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tudev.github.io/NewTUDevWebsite",
+  "homepage": "https://tudev.github.io/tudev-projects",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
