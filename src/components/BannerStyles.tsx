@@ -1,12 +1,13 @@
 import { Offcanvas } from 'react-bootstrap'
 import styled from 'styled-components'
 import { NAV_COLORS } from '../tools/Constants'
-import BGPattern from '../assets/bg-pattern1.png'
+import BGPattern from '../assets/bg-pattern3.png'
 import { Link } from 'react-router-dom'
 
 export default class BannerStyles {
 	static readonly OffcanvasContainer = styled(Offcanvas)`
         background-image: url(${BGPattern});
+        background-size: cover;
 	`
 
     static readonly OffcanvasBody = styled(Offcanvas.Body)`
@@ -21,7 +22,7 @@ export default class BannerStyles {
     static readonly HomeLink = styled(Link)`
         border-radius: 4px;
         transition: background-color 0.5s ease;
-        padding: 1%;
+        padding: 2%;
         color: black;
 
         &:hover {
