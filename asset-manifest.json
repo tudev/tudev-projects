@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/tudev-projects/static/css/main.44f8b8b5.css",
-    "main.js": "/tudev-projects/static/js/main.8379e83f.js",
+    "main.js": "/tudev-projects/static/js/main.b83c7db7.js",
     "static/js/787.81f68749.chunk.js": "/tudev-projects/static/js/787.81f68749.chunk.js",
     "static/media/owl-bg.webm": "/tudev-projects/static/media/owl-bg.4ea85e1f3abec017bc5d.webm",
-    "static/media/bg-pattern1.png": "/tudev-projects/static/media/bg-pattern1.33dfd44fb35f903edc84.png",
+    "static/media/bg-pattern3.png": "/tudev-projects/static/media/bg-pattern3.81d9ced9e6ca9bcdd53e.png",
     "static/media/logo-red.png": "/tudev-projects/static/media/logo-red.70c71e7f1ab686cfa853.png",
     "index.html": "/tudev-projects/index.html",
     "main.44f8b8b5.css.map": "/tudev-projects/static/css/main.44f8b8b5.css.map",
-    "main.8379e83f.js.map": "/tudev-projects/static/js/main.8379e83f.js.map",
+    "main.b83c7db7.js.map": "/tudev-projects/static/js/main.b83c7db7.js.map",
     "787.81f68749.chunk.js.map": "/tudev-projects/static/js/787.81f68749.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44f8b8b5.css",
-    "static/js/main.8379e83f.js"
+    "static/js/main.b83c7db7.js"
   ]
 }
