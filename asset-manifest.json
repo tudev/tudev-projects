@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/NewTUDevWebsite/static/css/main.44f8b8b5.css",
-    "main.js": "/NewTUDevWebsite/static/js/main.61a5bb19.js",
-    "static/js/787.bd0737ba.chunk.js": "/NewTUDevWebsite/static/js/787.bd0737ba.chunk.js",
-    "static/media/owl-bg.webm": "/NewTUDevWebsite/static/media/owl-bg.4ea85e1f3abec017bc5d.webm",
-    "static/media/bg-pattern1.png": "/NewTUDevWebsite/static/media/bg-pattern1.33dfd44fb35f903edc84.png",
-    "static/media/logo-red.png": "/NewTUDevWebsite/static/media/logo-red.70c71e7f1ab686cfa853.png",
-    "index.html": "/NewTUDevWebsite/index.html",
-    "main.44f8b8b5.css.map": "/NewTUDevWebsite/static/css/main.44f8b8b5.css.map",
-    "main.61a5bb19.js.map": "/NewTUDevWebsite/static/js/main.61a5bb19.js.map",
-    "787.bd0737ba.chunk.js.map": "/NewTUDevWebsite/static/js/787.bd0737ba.chunk.js.map"
+    "main.css": "/tudev-projects/static/css/main.44f8b8b5.css",
+    "main.js": "/tudev-projects/static/js/main.8379e83f.js",
+    "static/js/787.81f68749.chunk.js": "/tudev-projects/static/js/787.81f68749.chunk.js",
+    "static/media/owl-bg.webm": "/tudev-projects/static/media/owl-bg.4ea85e1f3abec017bc5d.webm",
+    "static/media/bg-pattern1.png": "/tudev-projects/static/media/bg-pattern1.33dfd44fb35f903edc84.png",
+    "static/media/logo-red.png": "/tudev-projects/static/media/logo-red.70c71e7f1ab686cfa853.png",
+    "index.html": "/tudev-projects/index.html",
+    "main.44f8b8b5.css.map": "/tudev-projects/static/css/main.44f8b8b5.css.map",
+    "main.8379e83f.js.map": "/tudev-projects/static/js/main.8379e83f.js.map",
+    "787.81f68749.chunk.js.map": "/tudev-projects/static/js/787.81f68749.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44f8b8b5.css",
-    "static/js/main.61a5bb19.js"
+    "static/js/main.8379e83f.js"
   ]
 }
